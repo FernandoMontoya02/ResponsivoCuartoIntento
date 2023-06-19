@@ -1,0 +1,120 @@
+header{
+    display: flex;
+    height: auto;
+    background-color: rgb(104, 83, 224);
+    justify-content: space-between; /*ayuda a que cada icono se ponga uno en cada esquina*/
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px; /*me permite separar el texto de la imagen*/
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    left: 50%;
+    right: 50%;
+}
+
+
+.Cuerpo {
+    padding: auto;
+    background-image: url(https://img.freepik.com/fotos-premium/icono-aplicacion-tik-tok-pantalla-computadora-3d_351527-299.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+
+.principal img{
+    width: 93px;
+    height: 93px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parte1 {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+.TODOMI{
+    display: flex;
+}
+.SobreMi{
+    text-align: justify;
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+FOOTER{
+    text-align: center;
+    height: auto;
+    background-color: rgb(128, 205, 218);
+    padding: auto;
+}
+
+@media screen and (max-width:760px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+    
+    .principal img{
+        flex-direction: column;
+    }
+    .Cuerpo{
+    flex-direction: inherit;
+    
+    }
+    .contenedor{
+        flex-direction: column;
+        font-size: 12PX;
+        text-align: justify;
+        
+    }
+    .carousel-inner img{
+        padding: auto;
+    }
+    .SobreMi{
+        flex-flow: column;
+        font-size: 12px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .SobreMi{
+            flex-flow: column;
+            font-size: 1px;
+        }
+        .contenedor{
+            flex-direction: column;
+            font-size: 14PX;
+            text-align: justify;
+      }
+    }
+    @media (min-width: 1025px) {
+       
+    }.SobreMi{
+        flex-flow: column;
+        font-size: 16px;
+    }
+    .contenedor{
+        flex-direction: column;
+        font-size: 16PX;
+        text-align: justify;
+  }
+}
